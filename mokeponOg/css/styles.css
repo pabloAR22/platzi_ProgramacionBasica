@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #041562;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: white;
+    font-size: 32px;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 20px;
+}
+
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: #11468F;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.tarjeta-de-mokepon:hover {
+    cursor: pointer;
+    border: 1px solid white;
+    width: 220px;
+    height: 220px;
+    transition: ease-in-out .2s;
+}
+
+.tarjeta-de-mokepon img {
+    width:120px;
+}
+
+#boton-mascota {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 180px;
+    height: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15px;
+    margin-top:15px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label{
+    width: 220px;
+    height: 220px;
+    border: 1px solid white;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-ataque {
+    border: none;
+    width: 120px;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    background: #11468F;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#mensajes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 280px;
+    background-color: #EEEE;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+#boton-reiniciar {
+    border: none;
+    font-size: 1.2em;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    color: #11468F;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: white;
+}
+
+#vidas-jugador, #vidas-enemigo{
+    font-size: 32px;
+    margin-bottom: 0px;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 360px){
+    .tarjetas, .tarjetas-ataques {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
